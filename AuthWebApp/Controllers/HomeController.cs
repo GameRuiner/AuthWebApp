@@ -18,7 +18,7 @@ namespace AuthWebApp.Controllers
             return result;
         }
 
-        [Authorize]
+        [Authorize(Roles ="admin")]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
